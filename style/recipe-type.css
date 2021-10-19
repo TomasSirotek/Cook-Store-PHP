@@ -1,0 +1,9 @@
+.card:hover{
+    border:1px solid #D8A969;
+    color:#D8A969;
+   }
+
+.card-body > p{
+    color:black;
+
+}

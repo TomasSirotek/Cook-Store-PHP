@@ -1,0 +1,21 @@
+.main-heros{
+    position: relative;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0 220px;
+  }
+
+  .btn{
+      padding:30px !important;
+      background-color:#D8A969;
+      color: white;
+      font-size:20px;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+
+  .btn:hover{
+    background: black;
+    color:#D8A969;
+  }
