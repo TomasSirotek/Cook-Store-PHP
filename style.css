@@ -1,4 +1,10 @@
-
+/*
+Theme Name: Cook Store 
+Author: Simko & Joci & Major & Bendi
+Description: Fake Cook Store bout Taxonomy and Custom Posts
+Version: 0.1
+Text Domain: Our unique child Theme 
+*/
 
 html{
     text-decoration: none;
@@ -11,7 +17,7 @@ body{
 }
 
 
-/* Font sizes and colors */
+/* Font sizes  */
 
 h1{
     font-size:2rem;
