@@ -20,19 +20,59 @@ if ( have_posts() ) :
         </div>
     </section>
 
-    <div class="container">
-    <div class="books-header mt-3 ">
-        <h2 class="text-center">Our Content</h2>
-    </div>
-        <div class="row align-content-center text-center mt-4 ">
-        <div class="col-12 col-md-6">
-        <button type="button" class="btn ">Recipies</button>
+
+<div class="container">
+<div class="row book-container justify-content-center" >
+                    <h2>Our Books</h2>
+                    </div>
+                    <div class="mt-4 ">
+                    <?php
+                        $args = array(
+                        'post_type'   => 'book',
+                        'post_status' => 'publish',
+                        
+                        );
+                        
+                        $book = new WP_Query( $args );
+                        if( $book->have_posts() ) :
+                        ?>
+                        <div class="row">
+                        <?php
+                            while( $book->have_posts() ) :
+                                $book->the_post();
+                                ?>
+                        <div class="col specific">
+                        <div class="card h-100" style="width: 18rem;">
+                            <img class="card-img-top" alt="Card image cap" src="<?php the_field("book_image")?>" alt="logo" width="100%" height="300"  >
+                        <div class="card-body">
+                            <h5 class="card-title"><?php the_title() ?></h5>
+                            <p class="card-text">Author:<?php the_field("author") ?></p>
+                        </div>
+                        <div class="card-footer border-top-0 ">
+                            <div class="text-center">
+                                <div class="routing mt-auto">
+                                <a href="<?php the_permalink() ?>">
+                                <span>Click here for more Info !</span>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            ?>
         </div>
-        <div class="col-12 col-md-6">
-        <button type="button" class="btn ">Books</button>
-        </div>
-        </div>
-    </div>
+    <?php
+    else :
+    esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
+    endif;
+    ?>
+</div>
+</div>
+
+
   
 
 <?php endwhile; else: echo '<p>No post have been added </p>'; endif; get_footer(); ?>

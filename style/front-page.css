@@ -19,3 +19,20 @@
     background: black;
     color:#D8A969;
   }
+
+  
+  .specific{
+      color:white;
+  }
+
+  .book-container > h2 {
+    font-size:30px;
+    margin-top:2%;
+  }
+
+  .routing > a  {
+      color:#D8A969;
+  }
+  .routing > a:hover  {
+      color:black;
+  }
