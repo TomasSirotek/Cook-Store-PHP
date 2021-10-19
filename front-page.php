@@ -14,7 +14,7 @@ if ( have_posts() ) :
                     <p><?php the_content() ?></p>
                     
                     <?php get_search_form(); ?>
-                    <span>Tru typing <b>Cook...</b></span>
+                    <span>Try typing <b>Cook...</b></span>
                 </div>
             </div>
         </div>
