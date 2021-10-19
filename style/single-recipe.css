@@ -1,0 +1,32 @@
+.main {
+    position: relative;
+    min-height: 20vh;
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0 220px;
+  }
+
+  .main-header-time{
+        color:#D8A969;
+  }
+
+  .main-header-title{
+      font-size: 1.256rem;
+      color:white;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+
+  .main-title-right{
+    background:#484848;
+    color:white;
+    padding:20px;
+  }
+
+ .main-text-left  {
+      color:white;
+  }
+
+  .main-dif-under{
+      color:white;
+  }

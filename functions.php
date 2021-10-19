@@ -7,6 +7,7 @@ function cookStore_load_scripts() {
     wp_enqueue_script("j-query", "https://code.jquery.com/jquery-3.2.1.slim.min.js");
     wp_enqueue_script("bootstrap-js","https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" );
     wp_enqueue_style("cook-store-style",get_stylesheet_uri());
+    wp_enqueue_style("single_recipe", get_stylesheet_directory_uri() . "/style/single-recipe.css"); 
 
     
 }
