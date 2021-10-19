@@ -1,8 +1,25 @@
 .exact-post{
-border:3px solid black;
+border:3px solid #D8A969;
+padding: 10px;
 background:grey;
 }
 
 .exact-post h1 {
-    color:green;
+    font-size:22px;
+    
+}
+.result-title .result-a {
+    color:#D8A969;
+    font-size:15px;
+    
+}
+
+
+
+#s{
+    width:150px;
+}
+
+h4 > a{
+    color:#D8A969;
 }

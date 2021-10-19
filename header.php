@@ -11,7 +11,7 @@
 <body>
 
 <header class="header">  
-<nav class="navbar navbar-expand-md  navbar-dark bg-dark static-top  " role="navigation">
+<nav class="navbar navbar-expand-md  navbar-dark bg-dark static-top " role="navigation">
 
   <div class="container">
   <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><b>COOK</b> WORLD</a>

@@ -11,6 +11,7 @@ function cookStore_load_scripts() {
     wp_enqueue_style("front-page", get_stylesheet_directory_uri() . "/style/front-page.css"); 
     wp_enqueue_style("recipe-type", get_stylesheet_directory_uri() . "/style/recipe-type.css"); 
     wp_enqueue_style("search-results", get_stylesheet_directory_uri() . "/style/search-results.css"); 
+    wp_enqueue_style("footer", get_stylesheet_directory_uri() . "/style/footer.css"); 
 
     
 }

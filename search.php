@@ -4,7 +4,7 @@ get_header();
 
 if ( have_posts() ) :
 	?>
-    <h2 class="text-center">Search results for "<?php the_search_query(); ?>"</h2>
+    <h2 class="text-center py-3">Search results for "<?php the_search_query(); ?>"</h2>
 	<?php
 	while ( have_posts() ) : the_post(); ?>
 
@@ -12,12 +12,12 @@ if ( have_posts() ) :
             <div class="row">
             <?php if ( has_post_thumbnail() ) { ?>
                 <div class="result-title">
-                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'small-thumbnail' ); ?></a>
+                    <a  href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'first-thumbnail' ); ?></a>
                 </div>
 			<?php } ?>
                 <div class="col justify-content-center exact-post mb-3">
-                <h1><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h1>
-                <h1 class="post-meta"><?php the_time( 'F jS, Y' ); ?> | <a
+                <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
+                <h4 class="post-meta"><?php the_time( 'F jS, Y' ); ?> | <a
                 href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
                 | <?php
 				$categories = get_the_category();
@@ -30,7 +30,7 @@ if ( have_posts() ) :
 					}
 					echo trim( $output, $comma );
 				} ?>
-            </h1>
+            </h4>
             <p>
 				<?php echo get_the_excerpt() ?>
                 <a href="<?php the_permalink() ?>">Read more &raquo</a>

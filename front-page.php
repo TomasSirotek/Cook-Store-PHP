@@ -13,8 +13,12 @@ if ( have_posts() ) :
                     </h2>
                     <p><?php the_content() ?></p>
                     
-                    <?php get_search_form(); ?>
+                    <div class="row justify-content-center">
+                    <?php get_search_form(); ?> 
+                 
+                    </div>
                     <span>Try typing <b>Cook...</b></span>
+                    
                 </div>
             </div>
         </div>
