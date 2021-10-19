@@ -27,9 +27,9 @@ if ( have_posts() ) :
 
 <div class="container">
 <div class="row book-container justify-content-center" >
+        <div class="text-main-page py-4">
                     <h2>Our Books</h2>
                     </div>
-                    <div class="mt-4 ">
                     <?php
                         $args = array(
                         'post_type'   => 'book',
@@ -73,7 +73,7 @@ if ( have_posts() ) :
     esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
     endif;
     ?>
-</div>
+
 </div>
 
 
