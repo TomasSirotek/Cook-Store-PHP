@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-md  navbar-dark bg-dark static-top  " role="navigation">
 
   <div class="container">
-  <a class="navbar-brand" href="#">Cook <b>Store</b></a>
+  <a class="navbar-brand" href="#"><b>COOK</b> WORD</a>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>

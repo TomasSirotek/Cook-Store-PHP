@@ -1,5 +1,18 @@
-html{
-    background: green;
+body{
+    background: #1F1F1F;
+    /* color:white; */
 }
 
+
+/* Font sizes and colors */
+
+h1{
+    font-size:2rem;
+}
  
+h2{
+    font-size:3.125rem;
+    color:#D8A969;
+    text-transform: uppercase;
+}
+
